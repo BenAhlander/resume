@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "./static/css/main.5ecd60fb.chunk.css",
+    "main.js": "./static/js/main.e826671e.chunk.js",
+    "main.js.map": "./static/js/main.e826671e.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.b7e9df81.js",
+    "runtime-main.js.map": "./static/js/runtime-main.b7e9df81.js.map",
+    "static/css/2.a641e29a.chunk.css": "./static/css/2.a641e29a.chunk.css",
+    "static/js/2.d890eed8.chunk.js": "./static/js/2.d890eed8.chunk.js",
+    "static/js/2.d890eed8.chunk.js.map": "./static/js/2.d890eed8.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.2bb69816a433fe0449d104c74f78fe35.js": "./precache-manifest.2bb69816a433fe0449d104c74f78fe35.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.a641e29a.chunk.css.map": "./static/css/2.a641e29a.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "./static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.d890eed8.chunk.js.LICENSE": "./static/js/2.d890eed8.chunk.js.LICENSE",
+    "static/media/ChunkerLandingImg.png": "./static/media/ChunkerLandingImg.35738084.png",
+    "static/media/ChunkerLandingPage.PNG": "./static/media/ChunkerLandingPage.a9dc4ee6.PNG",
+    "static/media/ChunkerLicenseDashboard.PNG": "./static/media/ChunkerLicenseDashboard.26c4c90d.PNG",
+    "static/media/ChunkerLicenseForm.PNG": "./static/media/ChunkerLicenseForm.6d65ee1c.PNG",
+    "static/media/ChunkerListingDetail.PNG": "./static/media/ChunkerListingDetail.f9f09d4e.PNG",
+    "static/media/ChunkerListingEdit.PNG": "./static/media/ChunkerListingEdit.95bd7fc7.PNG",
+    "static/media/ChunkerSearch.PNG": "./static/media/ChunkerSearch.d1e17bc8.PNG",
+    "static/media/css.png": "./static/media/css.3395fe42.png",
+    "static/media/header-bg2.jpg": "./static/media/header-bg2.5772b79c.jpg",
+    "static/media/html.png": "./static/media/html.1941a509.png",
+    "static/media/javascript.png": "./static/media/javascript.a37eeddf.png",
+    "static/media/material.png": "./static/media/material.2aad2389.png",
+    "static/media/react.png": "./static/media/react.82a318cc.png",
+    "static/media/redux.png": "./static/media/redux.ad6ef14b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b7e9df81.js",
+    "static/css/2.a641e29a.chunk.css",
+    "static/js/2.d890eed8.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.e826671e.chunk.js"
+  ]
+}
