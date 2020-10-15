@@ -39,7 +39,7 @@ export default function PaperSheet() {
       </Grid>
       <Grid item xs={11} sm={8} md={6}>
         <Typography style={{ color: "white" }} variant="h4" align="center">
-          Full stack engineer specializing in scalable, font end, component
+          Full stack engineer specializing in scalable, front end, component
           architecture.
         </Typography>
       </Grid>

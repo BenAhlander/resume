@@ -1,5 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
 // import Grid from "@material-ui/core/Grid";
 import listProjects from "./projects";
 // import MediaCard from "../../components/MediaCard";
@@ -9,7 +10,7 @@ import openInNewTab from "../../utils/openInNewTab";
 
 import {
   VerticalTimeline,
-  VerticalTimelineElement
+  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -21,7 +22,7 @@ const renderProjectCard = (
     className="vertical-timeline-element--work"
     contentStyle={{
       background: "#607d8b",
-      color: useDarkTheme ? "#fff" : "#000"
+      color: useDarkTheme ? "#fff" : "#000",
     }}
     contentArrowStyle={{ borderRight: "7px solid  #607d8b" }}
     date={date}
@@ -50,7 +51,11 @@ const renderProjectCard = (
 );
 
 export default ({ useDarkTheme }) => (
-  <VerticalTimeline>
-    {listProjects.map(e => renderProjectCard(e, useDarkTheme))}
-  </VerticalTimeline>
+  <Grid container justify="center">
+    <Grid item xs={12} sm={10} md={8}>
+      <VerticalTimeline>
+        {listProjects.map((e) => renderProjectCard(e, useDarkTheme))}
+      </VerticalTimeline>
+    </Grid>
+  </Grid>
 );

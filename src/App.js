@@ -4,17 +4,17 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import {
   createMuiTheme,
   ThemeProvider,
-  responsiveFontSizes
+  responsiveFontSizes,
 } from "@material-ui/core/styles";
 import Marquee from "./components/Marquee";
-import MediaCard from "./components/MediaCard";
-import blue from "@material-ui/core/colors/blue";
 import blueGrey from "@material-ui/core/colors/blueGrey";
 import About from "./components/About";
 import Projects from "./containers/Projects";
 import Skills from "./containers/Skills";
 import Portfolio from "./containers/Portoflio";
 import Contact from "./containers/Contact";
+import Resume from "./components/Resume";
+import Hidden from "@material-ui/core/Hidden";
 
 function App() {
   const [useDarkTheme, setUseDarkTheme] = useState(true);
@@ -24,9 +24,9 @@ function App() {
       primary: blueGrey,
       secondary: {
         main: useDarkTheme ? "#000" : "#fff",
-        contrastText: useDarkTheme ? "#fff" : "#000"
-      }
-    }
+        contrastText: useDarkTheme ? "#fff" : "#000",
+      },
+    },
   });
   theme = responsiveFontSizes(theme);
   return (
@@ -38,6 +38,11 @@ function App() {
         <div name="about">
           <About />
         </div>
+        <Hidden smDown>
+          <div name="resume">
+            <Resume />
+          </div>
+        </Hidden>
         <div name="timeline">
           <Projects useDarkTheme={useDarkTheme} />
         </div>

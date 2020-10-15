@@ -64,12 +64,12 @@ export default () => (
             style={{ marginBottom: "16px", marginTop: "16px" }}
           >
             <Typography>
-              I have spent the last two years developing Chunker. Chunker is a
+              I have spent the last three years developing Chunker. Chunker is a
               platform to find short-term warehouse space. This project has
-              raised ~1 million dollars and has hundreds of users, most are
+              raised over $1 million dollars and has hundreds of users, most are
               corporate accounts and include some big names like WallMart, LL
               Brands, and Toll-Group. Chunker is built with ReactJs, MaterialUI,
-              Redux and integrates with Stripe and HelloSign.
+              Redux and integrates with Stripe, HelloSign, and more.
             </Typography>
           </Grid>
         </Grid>
