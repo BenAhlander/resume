@@ -5,7 +5,7 @@ export default [
     header: "Chunker",
     subheader: "React / JS Web Developer",
     title:
-      "Lead UI developer on a three person team. Designed to be an online marketplace for warehouse space.",
+      "Led front end web development and UI/UX design using React, a custom RESTapi, and various other JavaScript tools to create a platform for sharing commercial warehouse space.",
     img: ChunkerImg,
     date: "2017 - current",
     key: "chunker"
