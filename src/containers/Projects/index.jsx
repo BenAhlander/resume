@@ -5,8 +5,6 @@ import Grid from "@material-ui/core/Grid";
 import listProjects from "./projects";
 // import MediaCard from "../../components/MediaCard";
 import AboutIcon from "@material-ui/icons/Android";
-import Button from "@material-ui/core/Button";
-import openInNewTab from "../../utils/openInNewTab";
 
 import {
   VerticalTimeline,
@@ -15,7 +13,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const renderProjectCard = (
-  { header, subheader, title, key, date },
+  { header, subheader, title, date },
   useDarkTheme
 ) => (
   <VerticalTimelineElement
@@ -25,7 +23,7 @@ const renderProjectCard = (
       color: useDarkTheme ? "#fff" : "#000",
     }}
     contentArrowStyle={{ borderRight: "7px solid  #607d8b" }}
-    date={date}
+  date={<p style={{color: "#fff"}}>{date}</p>}
     iconStyle={{ background: "#607d8b", color: "#fff" }}
     icon={<AboutIcon />}
   >
@@ -38,15 +36,6 @@ const renderProjectCard = (
     <Typography variant="body2" align="left" style={{ color: "#fff" }}>
       {title}
     </Typography>
-    {key === "chunker" ? (
-      <Button
-        variant="outlined"
-        onClick={() => openInNewTab("https://www.chunker.com")}
-        style={{ marginTop: "16px" }}
-      >
-        Visit Chunker
-      </Button>
-    ) : null}
   </VerticalTimelineElement>
 );
 

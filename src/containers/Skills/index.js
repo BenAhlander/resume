@@ -12,45 +12,49 @@ import Typography from "@material-ui/core/Typography";
 const listIcons = [
   {
     label: "ReactJS",
-    Icon: ReactLogo
+    Icon: ReactLogo,
   },
   {
     label: "JavaScript",
-    Icon: JavaScriptLogo
+    Icon: JavaScriptLogo,
   },
   {
     label: "Redux",
-    Icon: ReduxLogo
+    Icon: ReduxLogo,
   },
   {
     label: "Material UI",
-    Icon: MaterialLogo
+    Icon: MaterialLogo,
   },
   {
     label: "CSS",
-    Icon: CSSLogo
+    Icon: CSSLogo,
   },
   {
     label: "HTML",
-    Icon: HTMLLogo
-  }
+    Icon: HTMLLogo,
+  },
 ];
 
 const renderIcon = ({ label, Icon }) => (
-  <Grid item xs={6} sm={4} md={3} lg={2}>
+  <Grid item xs={6} sm={4} md={4} lg={4} xl={2}>
     <Card title={label} img={Icon} />
   </Grid>
 );
 
 export default () => (
   <div style={{ padding: "20px" }}>
-    <Grid container spacing={4}>
-      <Grid item xs={12}>
-        <Typography variant="h4" align="center">
-          SKILLS
-        </Typography>
+    <Grid container justify="center">
+      <Grid item xs={12} sm={10} md={8}>
+        <Grid container spacing={4}>
+          <Grid item xs={12}>
+            <Typography variant="h4" align="center">
+              SKILLS
+            </Typography>
+          </Grid>
+          {listIcons.map(renderIcon)}
+        </Grid>
       </Grid>
-      {listIcons.map(renderIcon)}
     </Grid>
   </div>
 );

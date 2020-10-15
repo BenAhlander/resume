@@ -47,7 +47,7 @@ function App() {
           <Projects useDarkTheme={useDarkTheme} />
         </div>
         <div name="portfolio">
-          <Portfolio />
+          <Portfolio useDarkTheme={useDarkTheme} />
         </div>
         <div name="skills">
           <Skills />
