@@ -52,7 +52,7 @@ function SwipeableTextMobileStepper({ listImages }) {
 
   return (
     <div className={classes.root}>
-      <Paper elevation={0} square elevation={0} className={classes.header}>
+      <Paper elevation={0} square className={classes.header}>
         <Typography>{listImages[activeStep].label}</Typography>
       </Paper>
       <SwipeableViews

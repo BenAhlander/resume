@@ -18,14 +18,14 @@ import SkillsIcon from "@material-ui/icons/Code";
 import ContactIcon from "@material-ui/icons/Message";
 
 //REACT SCROLL
-import * as Scroll from "react-scroll";
+// import * as Scroll from "react-scroll";
 import {
   Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
+  // Element,
+  // Events,
+  // animateScroll as scroll,
+  // scrollSpy,
+  // scroller
 } from "react-scroll";
 
 const useStyles = makeStyles(theme => ({

@@ -73,6 +73,7 @@ function Chunker() {
           <img
             src={ChunkerLogoUrl}
             style={{ maxWidth: "200px", maxHeight: "60px" }}
+            alt="Chunker Logo"
           />
         </Grid>
       </Grid>
@@ -87,7 +88,7 @@ function Chunker() {
             I have spent the last three years developing Chunker. Chunker is a
             platform to find short-term warehouse space. This project has raised
             over $1 million dollars and has hundreds of users, most are
-            corporate accounts and include some big names like WallMart, LL
+            corporate accounts and include some big names like WalMart, LL
             Brands, and Toll-Group. Chunker is built with ReactJs, MaterialUI,
             Redux and integrates with Stripe, HelloSign, and more.
           </Typography>
@@ -113,7 +114,8 @@ function NinjaSkillGames() {
           <img
             src={NinjaSpaceMonkeyLogo}
             style={{ maxWidth: "200px", maxHeight: "60px" }}
-          />{" "}
+            alt="Ninja Space Monkey"
+          />
           <Typography variant="h5" style={{ marginLeft: "16px" }}>
             <b>Ninja</b>SpaceMonkey
           </Typography>
