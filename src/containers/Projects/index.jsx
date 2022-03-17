@@ -1,19 +1,19 @@
-import React from "react";
-import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
-// import Grid from "@material-ui/core/Grid";
-import listProjects from "./projects";
-// import MediaCard from "../../components/MediaCard";
-import AboutIcon from "@material-ui/icons/Android";
+import "react-vertical-timeline-component/style.min.css";
 
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+
+import Grid from "@material-ui/core/Grid";
+import React from "react";
+import SchoolIcon from "@material-ui/icons/School";
+import Typography from "@material-ui/core/Typography";
+import WorkIcon from "@material-ui/icons/Work";
+import listProjects from "./projects";
 
 const renderProjectCard = (
-  { header, subheader, title, date },
+  { header, subheader, title, date, isWork },
   useDarkTheme
 ) => (
   <VerticalTimelineElement
@@ -23,9 +23,9 @@ const renderProjectCard = (
       color: useDarkTheme ? "#fff" : "#000",
     }}
     contentArrowStyle={{ borderRight: "7px solid  #607d8b" }}
-  date={<p style={{color: "#fff"}}>{date}</p>}
+    date={<p style={{ color: "#fff" }}>{date}</p>}
     iconStyle={{ background: "#607d8b", color: "#fff" }}
-    icon={<AboutIcon />}
+    icon={isWork ? <WorkIcon /> : <SchoolIcon />}
   >
     <Typography variant="h5" align="left" style={{ color: "#fff" }}>
       {header}

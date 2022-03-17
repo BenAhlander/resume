@@ -1,12 +1,12 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
-import Card from "../../components/MediaCard";
-import ReactLogo from "../../assets/images/Icons/react.png";
-import HTMLLogo from "../../assets/images/Icons/html.png";
 import CSSLogo from "../../assets/images/Icons/css.png";
-import ReduxLogo from "../../assets/images/Icons/redux.png";
-import MaterialLogo from "../../assets/images/Icons/material.png";
+import Card from "../../components/MediaCard";
+import Grid from "@material-ui/core/Grid";
+import HTMLLogo from "../../assets/images/Icons/html.png";
 import JavaScriptLogo from "../../assets//images/Icons/javascript.png";
+import MaterialLogo from "../../assets/images/Icons/material.png";
+import React from "react";
+import ReactLogo from "../../assets/images/Icons/react.png";
+import ReduxLogo from "../../assets/images/Icons/redux.png";
 import Typography from "@material-ui/core/Typography";
 
 const listIcons = [
@@ -45,7 +45,7 @@ const renderIcon = ({ label, Icon }) => (
 export default () => (
   <div style={{ padding: "20px" }}>
     <Grid container justify="center">
-      <Grid item xs={12} sm={10} md={8}>
+      <Grid item xs={12} sm={10}>
         <Grid container spacing={4}>
           <Grid item xs={12}>
             <Typography variant="h4" align="center">
