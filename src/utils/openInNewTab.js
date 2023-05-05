@@ -1,4 +1,3 @@
-export default function openInNewTab(url) {
-  var win = window.open(url, "_blank");
-  win.focus();
+export default function openPageInNewTab(url) {
+  window.open(url, "_blank");
 }

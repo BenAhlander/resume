@@ -26,7 +26,8 @@ const overstockImages = [
 
 const chunkerImages = [
   {
-    imgPath: "https://storage.googleapis.com/resume_assets/overstock3.png",
+    imgPath:
+      "https://storage.googleapis.com/resume_assets/ChunkerLandingImg.png",
     label: "Chunker landing page",
   },
   {
@@ -122,7 +123,7 @@ function Overstock() {
     <Tile
       images={overstockImages}
       description="I was hired to work on a project to create Overstock Goverment. This site allows users who are tax exempt to buy products from Overstock. My team inhereted an MVP and have sclaed it to meet the needs of a large customer base. The site is built with ReactJS, NodeJS, and ExpressJs. React hooks are used for state mangament and side effects of state changes. A Node middlware handles all API calls to REST endpoints."
-      website="www.overstockgoverment.com"
+      website="https://www.overstockgovernment.com"
       buttonText="Visit Overstock Government"
       name="overstock goverment"
       img="https://storage.googleapis.com/resume_assets/overstockLogo.png"
@@ -139,7 +140,7 @@ function Chunker() {
       corporate accounts and include some big names like Dish Network, WalMart, LL
       Brands, and Toll-Group. Chunker is built with ReactJs, MaterialUI,
       Redux and integrates with Stripe, HelloSign, and more."
-      website="www.chunker.com"
+      website="https://www.chunker.com"
       buttonText="Visit Chunker"
       name="Chunker"
       img={ChunkerLogoUrl}

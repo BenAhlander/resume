@@ -1,9 +1,9 @@
-import React from "react";
 import Grid from "@material-ui/core/Grid";
+import React from "react";
 import Typography from "@material-ui/core/Typography";
 
 const aboutText =
-  "I am a certified full stack web developer with over three years of full-time font-end coding experience. I have specialized in writing front-end web applications with scalable, component architecture. I spend most of my time working with ReactJS, Javascript, and attending code meetups. I like to use modern technology to build apps that look great and are creative. I enjoy learning about new technologies and studying topics like Machine Learning and Blockchain.";
+  "I am a certified full stack web developer with over five years of full-time font-end coding experience. I have specialized in writing front-end web applications with scalable, component architecture. I spend most of my time working with ReactJS, Javascript, and attending code meetups. I like to use modern technology to build apps that look great and are creative. I enjoy learning about new technologies and studying topics like Machine Learning and Blockchain.";
 
 const About = () => (
   <Grid
@@ -13,7 +13,7 @@ const About = () => (
       paddingTop: "16px",
       paddingBottom: "16px",
       paddingRight: "16px",
-      paddingLeft: "16px"
+      paddingLeft: "16px",
     }}
     alignContent="center"
     justify="center"

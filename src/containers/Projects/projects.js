@@ -3,7 +3,7 @@ export default [
     header: "Overstock",
     subheader: "React / Node Web Developer",
     title:
-      "Work closely with Business, Project Managers, QA, Security, and other Devs to scale an MVP project to meet the needs of a large customer base.",
+      "Work closely with Business, Project Managers, QA, Marketing, Security, and other Devs to create, scale, and maintain a variety of web applications.",
     date: "2020 - Current",
     key: "overstock",
     isWork: true,
@@ -22,25 +22,25 @@ export default [
     subheader: "Immersive web development boot-camp.",
     title:
       "At Dev Mountain I become certified in full stack web development. My projects were awarded with best UI.",
-    date: "2017"
+    date: "2017",
   },
   {
     header: "Team Tree House",
     subheader: "Online learning school.",
     title: "I used Tree House to learn Javascript, CSS, and HTML",
-    date: "2016-2017"
+    date: "2016-2017",
   },
   {
     header: "University of Utah",
     subheader: "College",
     title: "Information systems student seeking masters in MSIS",
-    date: "2017 - current"
+    date: "2017 - current",
   },
   {
     header: "Utah Valley University",
     subheader: "College",
     title:
       "Computer science major, received letter of recommendation from professor of web development.",
-    date: "2017"
-  }
+    date: "2017",
+  },
 ];
