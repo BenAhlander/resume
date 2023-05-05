@@ -18,6 +18,12 @@ export default [
     isWork: true,
   },
   {
+    header: "University of Utah",
+    subheader: "College",
+    title: "Gradudate student in Information Systems, taking evening classes.",
+    date: "2017 - Current",
+  },
+  {
     header: "Dev Mountain",
     subheader: "Immersive web development boot-camp.",
     title:
@@ -29,12 +35,6 @@ export default [
     subheader: "Online learning school.",
     title: "Completed coursees on Javascript, CSS, and HTML",
     date: "2016-2017",
-  },
-  {
-    header: "University of Utah",
-    subheader: "College",
-    title: "Masters student in Information Systems.",
-    date: "2017 - current",
   },
   {
     header: "Utah Valley University",
