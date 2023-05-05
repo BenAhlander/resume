@@ -27,13 +27,13 @@ export default [
   {
     header: "Team Tree House",
     subheader: "Online learning school.",
-    title: "I used Tree House to learn Javascript, CSS, and HTML",
+    title: "Completed coursees on Javascript, CSS, and HTML",
     date: "2016-2017",
   },
   {
     header: "University of Utah",
     subheader: "College",
-    title: "Information systems student seeking masters in MSIS",
+    title: "Masters student in Information Systems.",
     date: "2017 - current",
   },
   {
