@@ -1,7 +1,6 @@
-import React from "react";
-import Grid from "@material-ui/core/Grid";
 import ExpansionPannel from "../ExpansionPannel";
-import Resume from "../../assets/BenAhlanderResume.pdf";
+import Grid from "@material-ui/core/Grid";
+import React from "react";
 
 export default () => (
   <Grid container justify="center" style={{ margin: "24px 0" }}>
@@ -10,7 +9,11 @@ export default () => (
         heading="Resume"
         body={
           <div style={{ height: "66vh", width: "100%" }}>
-            <embed src={Resume} width="100%" height="100%"></embed>
+            <embed
+              src="https://storage.googleapis.com/resume_assets/BenAhlanderResume2023.pdf"
+              width="100%"
+              height="100%"
+            ></embed>
           </div>
         }
       />

@@ -1,22 +1,8 @@
-import Button from "@material-ui/core/Button"
-import ChunkerLandingPage from "../../assets/images/ChunkerLandingPage.PNG";
-import ChunkerLicenseDashboard from "../../assets/images/ChunkerLicenseDashboard.PNG";
-import ChunkerLicenseForm from "../../assets/images/ChunkerLicenseForm.PNG";
-import ChunkerListingDetail from "../../assets/images/ChunkerListingDetail.PNG";
-import ChunkerListingEdit from "../../assets/images/ChunkerListingEdit.PNG";
-import ChunkerSearch from "../../assets/images/ChunkerSearch.PNG";
-import ChunkerSubmitDemand from "../../assets/images/SubmitDemand.PNG";
+import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import ImageStepper from "../../components/ImageStepper";
-import NinjaSpaceMonkeyLogo from "../../assets/images/spaceMonkeyLogo.png";
-import Overstock1 from "../../assets/images/overstock1.png"
-import Overstock2 from "../../assets/images/overstock2.png"
-import Overstock3 from "../../assets/images/overstock3.png"
-import OverstockLogo from '../../assets/images/overstockLogo.png';
 import Paper from "@material-ui/core/Paper";
 import React from "react";
-import SpaceMonkey1 from "../../assets/images/ninjaSpaceMonkey.PNG";
-import SpaceMonkey2 from "../../assets/images/ninjaSpaceMonkey2.PNG";
 import Typography from "@material-ui/core/Typography";
 import openInNewTab from "../../utils/openInNewTab";
 
@@ -25,47 +11,51 @@ const ChunkerLogoUrl =
 
 const overstockImages = [
   {
-    imgPath: Overstock1,
-    label: "Overstock landing page"
+    imgPath: "https://storage.googleapis.com/resume_assets/overstock1.png",
+    label: "Overstock landing page",
   },
   {
-    imgPath: Overstock2,
-    label: "Overstock home page"
+    imgPath: "https://storage.googleapis.com/resume_assets/overstock2.png",
+    label: "Overstock home page",
   },
   {
-    imgPath: Overstock3,
-    label: "Overstock shopping page"
-  }
-]
+    imgPath: "https://storage.googleapis.com/resume_assets/overstock3.png",
+    label: "Overstock shopping page",
+  },
+];
 
 const chunkerImages = [
   {
-    imgPath: ChunkerLandingPage,
+    imgPath: "https://storage.googleapis.com/resume_assets/overstock3.png",
     label: "Chunker landing page",
   },
   {
-    imgPath: ChunkerSubmitDemand,
+    imgPath: "https://storage.googleapis.com/resume_assets/SubmitDemand.PNG",
     label:
       "If Chunker does not have a warehouse that fits the needs of a user, they can publish their demand to be searched by landlords",
   },
   {
-    imgPath: ChunkerListingEdit,
+    imgPath:
+      "https://storage.googleapis.com/resume_assets/ChunkerListingEdit.PNG",
     label: "Landlords can create listings",
   },
   {
-    imgPath: ChunkerListingDetail,
+    imgPath:
+      "https://storage.googleapis.com/resume_assets/ChunkerListingDetail.PNG",
     label: "Listing detail page",
   },
   {
-    imgPath: ChunkerSearch,
+    imgPath: "https://storage.googleapis.com/resume_assets/ChunkerSearch.PNG",
     label: "Future tenants can search warehouses using a variety of filters",
   },
   {
-    imgPath: ChunkerLicenseDashboard,
+    imgPath:
+      "https://storage.googleapis.com/resume_assets/ChunkerLicenseDashboard.PNG",
     label: "Users can license a warehouse though the platform",
   },
   {
-    imgPath: ChunkerLicenseForm,
+    imgPath:
+      "https://storage.googleapis.com/resume_assets/ChunkerLicenseForm.PNG",
     label:
       "Values from form are replaced into a legal document that is signed electronically",
   },
@@ -73,12 +63,14 @@ const chunkerImages = [
 
 const spaceMonkeyImages = [
   {
-    imgPath: SpaceMonkey1,
+    imgPath:
+      "https://storage.googleapis.com/resume_assets/ninjaSpaceMonkey.PNG",
     label:
       "Users create an AWS IAM user with AWS Cognito and the Amplify React SDK",
   },
   {
-    imgPath: SpaceMonkey2,
+    imgPath:
+      "https://storage.googleapis.com/resume_assets/ninjaSpaceMonkey2.PNG",
     label: "Users view conversation starters from a DynamoDB",
   },
 ];
@@ -108,16 +100,21 @@ function Tile({ Title, images, description, website, buttonText, name, img }) {
       </Grid>
       <Grid container justify="center">
         <Grid item xs={12} style={{ marginBottom: "16px", marginTop: "16px" }}>
-          <Typography>
-            {description}
-          </Typography>
+          <Typography>{description}</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Button variant="contained" color="primary" fullWidth onClick={() => openInNewTab(website)}>{buttonText}</Button>
+          <Button
+            variant="contained"
+            color="primary"
+            fullWidth
+            onClick={() => openInNewTab(website)}
+          >
+            {buttonText}
+          </Button>
         </Grid>
       </Grid>
     </>
-  )
+  );
 }
 
 function Overstock() {
@@ -128,7 +125,7 @@ function Overstock() {
       website="www.overstockgoverment.com"
       buttonText="Visit Overstock Government"
       name="overstock goverment"
-      img={OverstockLogo}
+      img="https://storage.googleapis.com/resume_assets/overstockLogo.png"
     />
   );
 }
@@ -147,13 +144,17 @@ function Chunker() {
       name="Chunker"
       img={ChunkerLogoUrl}
     />
-  )
+  );
 }
 
 function NinjaSkillGames() {
   return (
     <Tile
-      Title={<Typography variant="h5" style={{ marginLeft: "16px" }}><b>Ninja</b>SpaceMonkey</Typography>}
+      Title={
+        <Typography variant="h5" style={{ marginLeft: "16px" }}>
+          <b>Ninja</b>SpaceMonkey
+        </Typography>
+      }
       images={spaceMonkeyImages}
       description=" NinjaSpaceMonkey is created using the serverless AWS Amplify stack.
       This includes Amplify serverless web hosting, IAM and Cognito for
@@ -163,7 +164,7 @@ function NinjaSkillGames() {
       website="https://www.ninjaspacemonkey.com/"
       buttonText="Visit NinjaSpaceMonkey"
       name="Ninja Space Monkey"
-      img={NinjaSpaceMonkeyLogo}
+      img="https://storage.googleapis.com/resume_assets/spaceMonkeyLogo.png"
     />
   );
 }
@@ -176,7 +177,11 @@ export default ({ useDarkTheme }) => {
           <Grid item xs={12} sm={10}>
             <Grid container spacing={3} justify="center">
               <Grid item xs={12}>
-                <Typography variant="h4" align="center" style={{ marginTop: "16px" }}>
+                <Typography
+                  variant="h4"
+                  align="center"
+                  style={{ marginTop: "16px" }}
+                >
                   PROJECTS
                 </Typography>
               </Grid>
@@ -184,7 +189,7 @@ export default ({ useDarkTheme }) => {
                 <Paper
                   style={{
                     padding: "16px",
-                    height: '100%',
+                    height: "100%",
                     backgroundColor: useDarkTheme ? "#616161" : "#eee",
                   }}
                 >
@@ -195,7 +200,7 @@ export default ({ useDarkTheme }) => {
                 <Paper
                   style={{
                     padding: "16px",
-                    height: '100%',
+                    height: "100%",
                     backgroundColor: useDarkTheme ? "#616161" : "#eee",
                   }}
                 >
@@ -206,7 +211,7 @@ export default ({ useDarkTheme }) => {
                 <Paper
                   style={{
                     padding: "16px",
-                    height: '100%',
+                    height: "100%",
                     backgroundColor: useDarkTheme ? "#616161" : "#eee",
                   }}
                 >

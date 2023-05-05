@@ -1,23 +1,22 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import img from "../../assets/images/header-bg2.jpg";
 import Grid from "@material-ui/core/Grid";
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => {
+const useStyles = makeStyles((theme) => {
   const isDarkTheme = theme.palette.type === "dark";
   return {
     root: {
-      padding: theme.spacing(3, 2)
+      padding: theme.spacing(3, 2),
     },
     background: {
-      background: `url(${img}) no-repeat center top;`,
+      background: `url(https://storage.googleapis.com/resume_assets/header-bg2.jpg) no-repeat center top;`,
       backgroundSize: "cover",
       height: "600px",
       maxHeight: "80vh",
       filter: isDarkTheme ? "grayscale(100%)" : null,
-      padding: "16px"
-    }
+      padding: "16px",
+    },
   };
 });
 
