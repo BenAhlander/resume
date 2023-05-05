@@ -4,9 +4,11 @@ import Grid from "@material-ui/core/Grid";
 import HTMLLogo from "../../assets/Icons/html.png";
 import JavaScriptLogo from "../../assets//Icons/javascript.png";
 import MaterialLogo from "../../assets/Icons/material.png";
+import NextLogo from "../../assets/Icons/next.svg";
 import React from "react";
 import ReactLogo from "../../assets/Icons/react.png";
 import ReduxLogo from "../../assets/Icons/redux.png";
+import TypeScriptLogo from "../../assets/Icons/typescript.png";
 import Typography from "@material-ui/core/Typography";
 
 const listIcons = [
@@ -17,6 +19,14 @@ const listIcons = [
   {
     label: "JavaScript",
     Icon: JavaScriptLogo,
+  },
+  {
+    label: "TypeScript",
+    Icon: TypeScriptLogo,
+  },
+  {
+    label: "NextJS",
+    Icon: NextLogo,
   },
   {
     label: "Redux",
@@ -37,7 +47,7 @@ const listIcons = [
 ];
 
 const renderIcon = ({ label, Icon }) => (
-  <Grid item xs={6} sm={4} md={4} lg={4} xl={2}>
+  <Grid item xs={6} sm={4} md={4} lg={3} xl={2}>
     <Card title={label} img={Icon} />
   </Grid>
 );
