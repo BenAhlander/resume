@@ -1,69 +1,54 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import AboutIcon from "@material-ui/icons/Person";
 import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-// import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-// import IconButton from "@material-ui/core/IconButton";
-// import MenuIcon from "@material-ui/icons/Menu";
-import Switch from "../Switch";
+import ContactIcon from "@material-ui/icons/Message";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
-
-//ICONS
-import AboutIcon from "@material-ui/icons/Android";
-import TimelineIcon from "@material-ui/icons/Timeline";
+import { Link } from "react-scroll";
 import PortfolioIcon from "@material-ui/icons/ImportContacts";
+import React from "react";
 import SkillsIcon from "@material-ui/icons/Code";
-import ContactIcon from "@material-ui/icons/Message";
+import Switch from "../Switch";
+import TimelineIcon from "@material-ui/icons/Timeline";
+import Toolbar from "@material-ui/core/Toolbar";
+import { makeStyles } from "@material-ui/core/styles";
 
-//REACT SCROLL
-// import * as Scroll from "react-scroll";
-import {
-  Link,
-  // Element,
-  // Events,
-  // animateScroll as scroll,
-  // scrollSpy,
-  // scroller
-} from "react-scroll";
-
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   //   appBar: {
   //     backgroundColor: "black"
   //   },
   menuButton: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   title: {
-    flexGrow: 1
-  }
+    flexGrow: 1,
+  },
 }));
 
 const buttons = [
   {
     label: "about",
-    Icon: <AboutIcon />
+    Icon: <AboutIcon />,
   },
   {
     label: "timeline",
-    Icon: <TimelineIcon />
+    Icon: <TimelineIcon />,
   },
   {
     label: "portfolio",
-    Icon: <PortfolioIcon />
+    Icon: <PortfolioIcon />,
   },
   {
     label: "skills",
-    Icon: <SkillsIcon />
+    Icon: <SkillsIcon />,
   },
   {
     label: "contact",
-    Icon: <ContactIcon />
-  }
+    Icon: <ContactIcon />,
+  },
 ];
 
 const renderButton = ({ label, Icon }) => (
