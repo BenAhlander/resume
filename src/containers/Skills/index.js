@@ -4,7 +4,7 @@ import Grid from "@material-ui/core/Grid";
 import HTMLLogo from "../../assets/Icons/html.png";
 import JavaScriptLogo from "../../assets//Icons/javascript.png";
 import MaterialLogo from "../../assets/Icons/material.png";
-import NextLogo from "../../assets/Icons/next.svg";
+import NextLogo from "../../assets/Icons/nextjs.png";
 import React from "react";
 import ReactLogo from "../../assets/Icons/react.png";
 import ReduxLogo from "../../assets/Icons/redux.png";
